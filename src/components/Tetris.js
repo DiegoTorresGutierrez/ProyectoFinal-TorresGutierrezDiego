@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { createStage, checkCollision } from '../gameHelpers';
 import { StyledTetrisWrapper, StyledTetris, StyledInst } from './styles/StyledTetris';
 
-import { PlayAudio } from '../music'
+
 // Custom Hooks
 import { useInterval } from '../hooks/useInterval';
 import { usePlayer } from '../hooks/usePlayer';
@@ -129,7 +129,6 @@ const Tetris = () => {
         <StyledInst>
         <aside>
             <StartButton callback={startGame} />
-            <StartButton onclick= "PlayAudio()"/>
         </aside>      
         </StyledInst>
       </StyledTetris>
